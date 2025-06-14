@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
+    <title>Encuesta de Desempeño</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #00FF00;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #CCFFCC;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #FF6666;
+        }
+        .question {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        button {
+            background-color: #000000;
+            color: #FF0099;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #00FF00;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>"ENCUESTA DE DESEMPEÑO DEL SITIO WEB"</h2>
+        <form action="procesar_encuesta.php" method="POST">
+            <div class="question">
+                <p>1. ¿Qué tan fácil fue navegar por el sitio?</p>
+                <label><input type="radio" name="pregunta1" value="Muy fácil">Muy fácil</label>
+                <label><input type="radio" name="pregunta1" value="Fácil">Fácil</label>
+                <label><input type="radio" name="pregunta1" value="Difícil">Difícil</label>
+            </div>
+
+            <div class="question">
+                <p>2. ¿El contenido del sitio fue relevante para ti?</p>
+                <label><input type="radio" name="pregunta2" value="Sí">Sí</label>
+                <label><input type="radio" name="pregunta2" value="No">No</label>
+            </div>
+            <div class="question">
+                <p>3. ¿Qué facilidad tuviste al hora de registrarte?</p>
+                <label><input type="radio" name="pregunta3" value="Muy fácil">Muy fácil</label>
+                <label><input type="radio" name="pregunta3" value="Fácil">Fácil</label>
+                <label><input type="radio" name="pregunta3" value="Difícil">Difícil</label>
+            </div>
+            <div class="question">
+                <p>4. ¿Te gustaron los colores y diseños de esta pagina?</p>
+                <label><input type="radio" name="pregunta4" value="Sí">Sí</label>
+                <label><input type="radio" name="pregunta4" value="No">No</label>
+            </div>
+            <div class="question">
+                <p>5. ¿Cómo calificarías la velocidad de carga de la página?</p>
+                <label><input type="radio" name="pregunta5" value="Rapida">Rapida</label>
+                <label><input type="radio" name="pregunta5" value="Lenta">Lenta</label>
+                <label><input type="radio" name="pregunta5" value="Neutro">Neutro</label>
+            </div>
+            <div class="question">
+                <p>6. ¿Te Gusto nuestro Catalogo de libros?</p>
+                <label><input type="radio" name="pregunta6" value="Sí">Sí</label>
+                <label><input type="radio" name="pregunta6" value="No">No</label>
+            </div>
+            <div class="question">
+                <p>7. ¿Te resultó útil la sección de contacto o ayuda?</p>
+                <label><input type="radio" name="pregunta7" value="Sí">Sí</label>
+                <label><input type="radio" name="pregunta7" value="No">No</label>
+            </div>
+            <div class="question">
+                <p>8. ¿Visitarías la página nuevamente en el futuro?</p>
+                <label><input type="radio" name="pregunta8" value="Sí">Sí</label>
+                <label><input type="radio" name="pregunta8" value="No">No</label>
+            </div>
+             <div class="question">
+                <p>9. ¿¿Te Gusto Esta Pagina?</p>
+                <label><input type="radio" name="pregunta9" value="Sí">Sí</label>
+                <label><input type="radio" name="pregunta9" value="No">No</label>
+            </div>
+            <div class="question">
+                <p>10. ¿Por Ultimo los precios de los libros son te parecieron accesibles?</p>
+                <label><input type="radio" name="pregunta10" value="Sí">Sí</label>
+                <label><input type="radio" name="pregunta10" value="No">No</label>
+            </div>
+            <button type="submit">Enviar Encuesta</button>
+        </form>
+    </div>
+<body background="../imagenes/hello.jpg">
+</body>
+</html>

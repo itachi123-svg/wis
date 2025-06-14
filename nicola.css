@@ -1,0 +1,164 @@
+/*uso de clases*/
+
+.contenedor
+{
+   background-color:#FFFF00;
+	width: auto;
+	height: 50%;
+	font-size: 60px;
+	margin-left: 30px;
+	padding: 25px;
+	border-radius: 30px;
+	text-align: center;
+
+}
+
+.conte
+{
+	
+	
+    width: auto;
+    height: 60%;  
+    font-size: 40px;  /*ancho*/
+  	 margin-top: 20;
+    padding: 30px;
+    border-radius: 20px;/*redondiar*/
+    background-color:#CCCFFF;
+
+}
+
+.contenedormenu
+{
+	width: 60%;
+	height: 40%;
+	background-color:#FFFF00;
+	display: block;
+
+	text-align:justify;
+	font-size: auto;  /*ancho*/
+	
+	margin-top: 30px;
+
+}
+
+li
+{
+	list-style: none;
+
+
+
+}
+
+
+a
+{
+	color: #18727A;
+
+
+	text-decoration: none;
+	padding: 10px;
+   text-transform: uppercase;
+background-color: rgb(255, 50, 0);
+
+background-image: linear-gradient(blue,white);
+background-repeat: no-repeat;
+background-size: 0% 100%;
+background-position-x: right;
+transition: background-size 1000ms;
+	 
+
+}
+
+a:hover
+{
+ /* width: auto;
+	margin-top: 15px;
+	background-color: #FF99FF;
+	height: 60%;
+	padding: 10px;
+	text-align: justify;
+background-image: linear-gradient(pink,blue);
+	background-repeat: no-repeat;
+  background-size: 0% 100%;*/
+ 
+  transition: background-size 1000ms;
+   background-size: 100% 100%;
+   background-position-x:left ;
+  
+
+
+	
+}
+
+.contenido
+{
+	background: linear-gradient(white,yellow);
+	width: auto;
+	margin-top: 50px;
+	background-color: #666666;
+	height: 100%;
+	padding: 30px;
+	text-align: justify;
+}
+
+.layout1
+{
+	display: inline-flex;
+
+}
+
+.comofunciona
+{
+	margin-top: 50px;
+	width: 40%;
+	height: 40%;
+
+}
+
+.comofunciona:hover
+{
+	filter: grayscale(100%);
+	size: 150%;
+	width: 250px;
+	border-radius: 50% 50% 50% 50%;/* redondea la imagen*/
+
+}
+
+
+.contenedordos
+{
+	width: auto;
+	height: 250px;
+	background: radial-gradient(pink 20%, purple 30%, blue 20%);
+}
+
+.redes
+{
+	width: 100%;
+	background-color: #996666;
+	display: block;
+	padding-left: 0;
+}
+/*
+	width: auto;
+	margin-top: 20%;
+	background-color: #ffd6b8;
+	height: 500px;¿+{ñ{}
+	text-align: justify;
+	margin: 15px;
+	idth: auto;
+	margin-top: 20%;
+	background-color: #ffd6b8;
+	height: 500px;¿+{ñ{}
+	text-align: justify;
+	margin: 15px;
+
+	idth: auto;
+	margin-top: 20%;
+	background-c0.
+	+621456+987/*--]eight: 500px;¿+{ñ{}	||
+	text-align: justify;
+	margin: 15px;*/
+
+
+

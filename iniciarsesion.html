@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/nicola.css">
+    <link rel="stylesheet" type="text/css" href="../awesome/css/all.css">
+    <title>Login</title>
+ <title>Inicio de Sesion</title>
+ <style>
+        body {
+            margin: 80px; /* Reduce los márgenes a 80px */
+        }
+        footer {
+            margin: 0; /* Elimina el margen en el pie de página */
+        }
+    </style>
+
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        form { display: inline-block; text-align: left; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+    </style>
+    <body>
+    <div class="contenedor">
+
+        Biblioteca Digital los "Gueros"  
+    </div>
+        <div class="layout1">
+        <div class="contenedormenu">
+            <font face="Berlin Sans FB Demi" color="white" size=4>
+        <ul>
+            <h2></h2><li><a href="../index.html"><i class="fa-solid fa-house"></i>INICIO</a><h2> </h2>
+            <h2></h2><li><a href="../admin/admin.html"><i class="fa-solid fa-gears"></i> ADMINISTRADOR</a><h2> </h2>
+            <li><a href="../contacto/contacto.html"><i class="fa-solid fa-chess"></i>CONTACTO</a></li><h2> </h2>
+        </ul>
+        </div>
+    </nav>
+    <body background="../imagenes/imagen4.jpg">
+    
+    <div class="contenido">
+        <font face="Bernard MT Condensed" color="#000000" size=4>
+
+</head>
+<body>
+    <center>
+            <h2>Inicio de Sesión</h2>
+    <form action="login.php" method="POST">
+        <label for="nombre">Correo:</label>
+        <input type="text" id="correo" name="correo" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button type="submit">Ingresar</button><br><br>
+
+        <label for="imagen">Selecciona Tu Imagen de perfil:</label>
+    <input type="file" id="imagen" name="imagen" accept="image/*" onchange="mostrarImagen(event)" required><br><br>
+
+    <img id="preview" src="" alt="Vista previa de la imagen" style="max-width: 200px; display: none;"><br><br>
+    </div>
+    </form>
+</center>
+<body background="../imagenes/imagen4.jpg">
+</div>
+<script>
+    function mostrarImagen(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const preview = document.getElementById("preview");
+                preview.src = e.target.result;
+                preview.style.display = "block";
+            };
+            reader.readAsDataURL(file);
+        }
+    }
+</script>         
+</body>
+</html>

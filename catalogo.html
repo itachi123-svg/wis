@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/nicola.css">
+	<link rel="stylesheet" type="text/css" href="../awesome/css/all.css">
+	<title> Biblioteca Digital</title>
+	<style>
+        body {
+            margin: 80px; /* Reduce los márgenes a 80px */
+        }
+        footer {
+            margin: 0; /* Elimina el margen en el pie de página */
+        }
+    </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .libro {
+            width: 200px;
+            margin: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .libro img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+	<div class="contenedor">
+
+		CATALOGOS DE LIBROS 
+	</div>
+		<div class="layout1">
+		<div class="contenedormenu">
+			<font face="Berlin Sans FB Demi" color="white" size=4>
+		<ul>
+			<h2></h2><li><a href="../index.html"><i class="fa-solid fa-house"></i>INICIO</a><h2> </h2>
+		<li><a href="catalogo/catalogo.html"><i class="fa-solid fa-book"></i>CATALOGO</a></li><h2> </h2>
+		<li><a href="../ventas/ventas.html"><i class="fa-solid fa-book"></i>VENTAS</a></li><h3> </h3>
+		<li><a href="../contacto/contacto.html"><i class="fa-solid fa-chess"></i>CONTACTO</a></li><h2> </h2>
+		</ul>
+		</div>
+	</nav>
+    <body background="../imagenes/imagen4.jpg">
+	<div class="contenido">
+		<font face="Cascadia Code" color="#000000" size=4>
+		Hola a Todos los estudiantes.
+		En este apartado de la pagina podras encontrar una gran divesidad de libros
+        los cuales se clasifican y se organanizan de forma que puedas encontrar
+        de Ciencia Ficccion,Terror,Aventuras,Informativos,Matematicos,Aprendizaje etc. 
+
+<center>
+	<h1>"Catálogo de Libros"</h1><br>
+    <div class="catalogo">
+        <div class="libro">
+            <img src="../imagenes/imagen1.jpg" alt="Libro 1">
+            <h3>El Principito</h3>
+            <p>Autor: Antoine de Saint-Exupéry</p>
+            <a href="descargar.php?id=<?php echo $libro['id']; ?>">Descargar</a>
+        </div>
+        <div class="libro">
+            <img src="../imagenes/imagen2.jpg" alt="Libro 2">
+            <h3>1984</h3>
+            <p>Autor: George Orwell</p>
+            <a href="descargar.php?id=<?php echo $libro['id']; ?>">Descargar</a>
+        </div>
+        <div class="libro">
+            <img src="../imagenes/imagen4.jpg" alt="Libro 3">
+            <h3>Cien años de soledad</h3>
+            <p>Autor: Gabriel García Márquez</p>
+            <a href="descargar.php?id=<?php echo $libro['id']; ?>">Descargar</a>
+        </div>
+         <div class="libro">
+            <img src="../imagenes/quijote.jpg" alt="Libro 4">
+            <h3>Don quijote de la Mancha</h3>
+            <p>Autor: Miguel de Cervantes</p>
+            <a href="descargar.php?id=<?php echo $libro['id']; ?>">Descargar</a>
+        </div>
+        <div class="libro">
+            <img src="../imagenes/it.jpg" alt="Libro 5">
+            <h3>"IT"</h3>
+            <p>Autor: Stephen king</p>
+            <a href="descargar.php?id=<?php echo $libro['id']; ?>">Descargar</a>
+        </div>
+        <div class="libro">
+            <img src="../imagenes/baldor.jpg" alt="Libro 6">
+            <h3>Algebra de Baldor</h3>
+            <p>Autor: Aurelio baldor</p>
+            <a href="descargar.php?id=<?php echo $libro['id']; ?>">Descargar</a>
+        </div>
+         <div class="libro">
+            <img src="../imagenes/alicia.jpg" alt="Libro 7">
+            <h3>Alicia en el pais maravillas</h3>
+            <p>Autor: Lewis Carroll</p>
+            <a href="descargar.php?id=<?php echo $libro['id']; ?>">Descargar</a>
+        </div>
+        <div class="libro">
+            <img src="../imagenes/mago.jpg" alt="Libro 7">
+            <h3>Mago de oz</h3>
+            <p>Autor:  L. Frank Baum</p>
+            <a href="descargar.php?id=<?php echo $libro['id']; ?>">Descargar</a>
+        </div>
+        <div class="libro">
+            <img src="../imagenes/pijama.jpg" alt="Libro 7">
+            <h3>el niño con el pijama de rayas</h3>
+            <p>Autor:  John Boyne</p>
+            <a href="descargar.php?id=<?php echo $libro['id']; ?>">Descargar</a>
+        </div>
+    </div>
+				
+		</center>
+</div>			
+</body>
+</html>
+
